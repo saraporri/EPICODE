@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+header {
+  color: #185958;
+}
+header img {
+  padding-bottom: 1em;
+  border-radius: 5px;
+}
+header div {
+  border-top: 2px solid #fcd774;
+
+  padding: 1em;
+  font-size: 1.5em;
+}
+header span {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+h1 {
+  font-size: 2em;
+}
