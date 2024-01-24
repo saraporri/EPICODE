@@ -21,7 +21,8 @@ main {
   width: 50%;
   margin-inline: auto;
 }
-.container {
+.container,
+.description {
   text-align: left;
 }
 h1 {
@@ -34,6 +35,10 @@ h2 {
 main img {
   border-radius: 1em;
   box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.2);
+  margin: 1em;
+}
+blockquote {
+  opacity: 0.5;
 }
 
 article {
