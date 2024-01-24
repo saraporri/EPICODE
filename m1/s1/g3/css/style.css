@@ -1,13 +1,11 @@
 body {
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
 }
 header {
   color: #185958;
 }
 header img {
   padding-bottom: 1em;
-  border-radius: 5px;
 }
 header div {
   border-top: 2px solid #fcd774;
@@ -19,6 +17,18 @@ header span {
   text-transform: uppercase;
   font-weight: bolder;
 }
+main {
+  max-width: 700px;
+  margin-inline: auto;
+}
 h1 {
   font-size: 2em;
+}
+h2 {
+  border-bottom: 2px solid #c1f2f1;
+  padding-bottom: 1em;
+}
+
+article {
+  border-left: 2px solid #fcd774;
 }
