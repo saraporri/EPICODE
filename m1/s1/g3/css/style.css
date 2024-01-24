@@ -32,7 +32,9 @@ h2 {
   border-bottom: 2px solid #c1f2f1;
   padding-bottom: 1em;
 }
-main img {
+
+main video {
+  max-width: 100%;
   border-radius: 1em;
   box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.2);
   margin: 1em;
@@ -43,6 +45,8 @@ blockquote {
 
 article {
   border-left: 2px solid #fcd774;
+  padding-left: 1em;
+  margin-bottom: 3em;
 }
 article div {
   color: #b04e1f;
