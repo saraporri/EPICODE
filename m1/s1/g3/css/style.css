@@ -18,8 +18,11 @@ header span {
   font-weight: bolder;
 }
 main {
-  max-width: 700px;
+  width: 50%;
   margin-inline: auto;
+}
+.container {
+  text-align: left;
 }
 h1 {
   font-size: 2em;
@@ -28,7 +31,22 @@ h2 {
   border-bottom: 2px solid #c1f2f1;
   padding-bottom: 1em;
 }
+main img {
+  border-radius: 1em;
+  box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.2);
+}
 
 article {
   border-left: 2px solid #fcd774;
+}
+article div {
+  color: #b04e1f;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a {
+  color: #087373;
+}
+article div a {
+  text-transform: capitalize;
 }
