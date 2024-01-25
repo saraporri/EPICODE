@@ -60,7 +60,7 @@ code {
   border: 1px solid #a19e9e;
   border-radius: 7px;
 }
-h2 {
+.secondary-title {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -78,6 +78,11 @@ ol li {
 }
 
 /* TABELLE */
+caption {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 thead tr th {
   background-color: #3469c5;
   color: #fff;
@@ -93,6 +98,10 @@ tr:nth-child(even) {
 table {
   border-bottom: 3px solid #3469c5;
   margin-bottom: 2em;
+}
+iframe {
+  width: 100%;
+  border-radius: 2em;
 }
 /* FORM */
 input {
