@@ -23,10 +23,12 @@ header {
 header p {
   margin: 2em;
 }
+
 header a {
   text-decoration: none;
   color: #fff;
 }
+
 /* MAIN */
 main {
   background-color: #fff;
@@ -68,11 +70,11 @@ code {
   opacity: 0.9;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
-ul li {
+main ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-ol li {
+main ol li {
   list-style-type: decimal;
   list-style-position: inside;
 }
