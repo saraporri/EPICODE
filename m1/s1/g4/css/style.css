@@ -1,7 +1,22 @@
 /* IMPOSTAZIONI GENERALI */
-
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../img/sfondo.png);
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
 /* HEADER */
-
+header {
+  background-color: #00889e;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2em;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 2em;
+}
 /* MAIN */
 
 /* ELEMENTI NEL MAIN - ARTICLE */
