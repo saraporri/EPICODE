@@ -17,6 +17,13 @@ header {
   box-sizing: border-box;
   margin-top: 2em;
 }
+header p {
+  margin: 2em;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
 /* MAIN */
 
 /* ELEMENTI NEL MAIN - ARTICLE */
