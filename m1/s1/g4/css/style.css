@@ -60,6 +60,12 @@ code {
   border: 1px solid #a19e9e;
   border-radius: 7px;
 }
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+}
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
@@ -86,7 +92,8 @@ button {
   font-weight: bold;
 }
 /* ELEMENTI NELL' ASIDE */
-aside div {
+aside div,
+section {
   background-color: #e3e5e6;
   padding: 1em;
   margin: 0.5em;
