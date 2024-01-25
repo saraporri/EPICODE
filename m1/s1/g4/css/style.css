@@ -91,6 +91,9 @@ aside div {
   padding: 1em;
   margin: 0.5em;
 }
+.date {
+  text-align: right;
+}
 /* FOOTER */
 footer {
   padding: 1em;
