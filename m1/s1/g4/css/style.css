@@ -68,6 +68,14 @@ h2 {
   opacity: 0.9;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
+ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
 
 /* TABELLE */
 thead tr th {
