@@ -32,6 +32,11 @@ main {
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+main strong,
+footer a {
+  color: #aa2072;
+  font-weight: 600;
+}
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
