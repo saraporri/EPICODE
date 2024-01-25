@@ -32,6 +32,7 @@ main {
   background-color: #fff;
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  line-height: 1.7;
 }
 h1 {
   font-size: 2em;
@@ -53,6 +54,11 @@ footer a {
 main a {
   color: #00889e;
   font-weight: 600;
+}
+code {
+  background-color: #eeeeee;
+  border: 1px solid #a19e9e;
+  border-radius: 7px;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
