@@ -40,4 +40,21 @@ h3 {
   color: #25a2c3;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  margin-bottom: 1em;
+}
+
+section {
+  padding: 4em 2em;
+  background-color: #fff;
+}
+section h2 {
+  margin-bottom: 0.8em;
+}
+section p {
+  margin-bottom: 1.8em;
+}
+section img {
+  border-radius: 50%;
+  margin: 2em auto;
+  width: 100%;
 }
