@@ -13,6 +13,9 @@ header {
   background-color: black;
   padding: 3em;
 }
+header img {
+  width: 50%;
+}
 #starter {
   background-image: url(../images/banner.jpg);
   background-size: 100%;
