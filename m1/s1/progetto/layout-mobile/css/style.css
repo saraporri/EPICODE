@@ -5,6 +5,10 @@ body {
   line-height: 1.65;
   text-align: center;
 }
+img {
+  max-width: 100%;
+}
+
 header {
   background-color: black;
   padding: 3em;
@@ -56,7 +60,6 @@ section p {
 section img {
   border-radius: 50%;
   margin: 2em auto;
-  width: 100%;
 }
 .box {
   background-color: #e22d0e;
@@ -74,4 +77,21 @@ cite {
 .box h4 {
   margin-top: 1.5em;
   font-size: 1.6em;
+}
+aside {
+  background-color: #fff;
+  padding: 5em 2em;
+}
+article {
+  margin-bottom: 2.5em;
+  border: 2px solid #dee1e3;
+  border-radius: 5px;
+  padding-bottom: 2em;
+}
+article a {
+  text-decoration: none;
+  color: #25a2c3;
+}
+article h2 {
+  margin-top: 1em;
 }
