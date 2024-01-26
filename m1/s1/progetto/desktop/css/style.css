@@ -102,7 +102,9 @@ article {
   padding-bottom: 2em;
   max-width: 300px;
 }
-
+article img {
+  height: 200px;
+}
 article a {
   text-decoration: none;
   color: #25a2c3;
