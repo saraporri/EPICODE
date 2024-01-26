@@ -106,7 +106,7 @@ footer h3 {
   margin-bottom: 0.6em;
   font-size: 2.2em;
 }
-footer a {
+footer div a {
   color: white;
   display: block;
 }
@@ -117,5 +117,5 @@ footer p {
   padding-top: 2em;
 }
 footer p a {
-  display: inline-block;
+  color: white;
 }
