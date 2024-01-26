@@ -1,0 +1,140 @@
+body {
+  background-color: #393d41;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: black;
+  padding: 1em;
+  text-align: left;
+}
+header img {
+  width: 200px;
+}
+#starter {
+  background-image: url(../images/banner.jpg);
+  background-size: 100%;
+  background-position: center center;
+  padding: 8em 7em;
+}
+#starter h1 {
+  font-size: 2.5em;
+  line-height: 1;
+}
+#starter p {
+  margin: 2em 2em;
+  font-size: 1.2em;
+}
+main #starter a {
+  background-color: #f04c2f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 1.2em 3em;
+  border-radius: 6px;
+}
+h1,
+h2,
+h3 {
+  color: #25a2c3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+section {
+  background-color: #fff;
+  padding: 7em 1em;
+}
+section div {
+  max-width: 700px;
+}
+.section-container {
+  display: inline-block;
+  text-align: left;
+  margin: 2em 4em;
+}
+section h2 {
+  margin-bottom: 0.8em;
+}
+section p {
+  margin-bottom: 1.8em;
+}
+section img {
+  border-radius: 50%;
+  margin-left: 4em;
+}
+.box {
+  background-color: #e22d0e;
+  color: white;
+  margin: 0;
+  padding: 4em 1em;
+}
+.box h3 {
+  color: white;
+  font-size: 2.2em;
+}
+cite {
+  font-style: italic;
+  font-size: 1.6em;
+}
+.box h4 {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+}
+aside {
+  background-color: #fff;
+  padding: 5em 2em;
+}
+article {
+  display: inline-block;
+  margin: 2em 2em;
+  border: 2px solid #dee1e3;
+  border-radius: 5px;
+  padding-bottom: 2em;
+  max-width: 300px;
+}
+
+article a {
+  text-decoration: none;
+  color: #25a2c3;
+  height: 300px;
+}
+article p {
+  margin: 0 1em;
+}
+article h2 {
+  margin-top: 1em;
+}
+
+footer {
+  padding: 3em;
+  background-color: #25a2c3;
+  color: white;
+}
+footer h3 {
+  color: white;
+  margin-bottom: 0.6em;
+  font-size: 2.2em;
+}
+footer div a {
+  color: white;
+  display: block;
+}
+footer p {
+  font-size: 0.7em;
+  border-top: 1px solid white;
+  margin: 2em 2em;
+  padding-top: 2em;
+}
+footer p a {
+  color: white;
+}
