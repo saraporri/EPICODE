@@ -127,7 +127,7 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-city.push("Toronto");
+me = new city("Toronto");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
