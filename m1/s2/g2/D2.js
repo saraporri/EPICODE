@@ -73,10 +73,17 @@ if (totalShoppingCart >= 50) {
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
-*/ let var1 = 2;
-let var2 = 3;
-let var3 = 4;
+*/ let a = 8;
+let b = 4;
+let c = 5;
 
+if (a > b && b > c) {
+  console.log("a", "b", "c");
+} else if (b > a && a > c) {
+  console.log("b", "a", "c");
+} else {
+  console.log("a", "c", "b");
+}
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
@@ -120,7 +127,7 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-me = city.push("Toronto");
+city.push("Toronto");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
@@ -133,15 +140,18 @@ me = city.push("Toronto");
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log(me.skills[skills.length - 1]);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
-
+const arr = [];
+arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(arr);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
+arr.splice(9, 1, 100);
+console.log(arr);
 /* SCRIVI QUI LA TUA RISPOSTA */
