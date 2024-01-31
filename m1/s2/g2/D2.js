@@ -4,26 +4,22 @@
 const numero1 = 1;
 const numero2 = 2;
 console.log(Math.max(numero1, numero2));
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-numInt = 3;
-if (numInt === !5) {
-  console.log("not equal");
-}
+let numInt = 3;
+if (numInt !== 5) console.log("not equal");
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
-number = 15;
-if (number % 5 === 0) {
-  return true;
-} else {
-  return false;
-}
+let number = 15;
+if (number % 5 === 0) console.log("divisibile per 5");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -34,6 +30,8 @@ if (
   numero1 === 8 ||
   numero2 === 8 ||
   numero1 + numero2 === 8 ||
+  numero2 + numero1 === 8 ||
+  numero2 - numero1 === 8 ||
   numero1 - numero2 === 8
 ) {
   console.log(
@@ -50,7 +48,7 @@ if (
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-const totalShoppingCart = 11;
+let totalShoppingCart = 11;
 if (totalShoppingCart >= 50) {
   console.log(totalShoppingCart);
 } else {
@@ -62,8 +60,9 @@ if (totalShoppingCart >= 50) {
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+totalShoppingCart *= 0.8;
 if (totalShoppingCart >= 50) {
-  console.log(totalShoppingCart * 0.8);
+  console.log(totalShoppingCart);
 } else {
   console.log(totalShoppingCart + 10);
 }
@@ -127,7 +126,7 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-me = new city("Toronto");
+me.city = "Toronto";
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
@@ -140,7 +139,7 @@ me = new city("Toronto");
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(me.skills[skills.length - 1]);
+me.skills.pop();
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
