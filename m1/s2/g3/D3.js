@@ -221,3 +221,17 @@ console.log(femaleCharacters);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+for (i = 0; i < Math.floor(Math.random() * starWarsCharacters[i].length); i++) {
+  console.log(
+    "mi chiamo " +
+      starWarsCharacters.name +
+      " sono alto " +
+      starWarsCharacters.height +
+      " il colore dei miei occhi è " +
+      starWarsCharacters.eye_color +
+      "il mio genere è " +
+      starWarsCharacters.gender +
+      "il mio colore dei capelli è " +
+      starWarsCharacters.hair_color
+  );
+}
