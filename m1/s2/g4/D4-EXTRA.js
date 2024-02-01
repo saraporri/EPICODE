@@ -5,14 +5,28 @@
  se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
-
+function checkArray() {}
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
 */
+const shoppingCart = [
+  { price: 13, name: "salt", id: "salt", quantity: 3 },
+  { price: 23, name: "nutella", id: "nutella", quantity: 6 },
+  { price: 3, name: "the", id: "the", quantity: 8 },
+  { price: 8, name: "pasta", id: "pasta", quantity: 23 },
+  { price: 4, name: "pizza", id: "pizza", quantity: 22 },
+];
 
+function shoppingCartTotal() {
+  for (let i = 0; i < shoppingCart.length; i++) {
+    total = shoppingCart[i].price * shoppingCart[i].quantity;
+  }
+  return console.log(total);
+}
+shoppingCartTotal();
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 3
