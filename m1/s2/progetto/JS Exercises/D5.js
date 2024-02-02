@@ -122,19 +122,67 @@ for (let i = 0; i < charactersArray.length; i++) {
   let posizione;
 
   switch (lettera) {
+    case "a":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "b":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "c":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "d":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "e":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "f":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
     case "g":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "h":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "i":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "l":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "m":
       posizione = alfabeto.indexOf(lettera) + 1;
       break;
     case "n":
       posizione = alfabeto.indexOf(lettera) + 1;
       break;
+    case "o":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "p":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "q":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "r":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "s":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "t":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
     case "u":
       posizione = alfabeto.indexOf(lettera) + 1;
       break;
-    case "z":
+    case "v":
       posizione = alfabeto.indexOf(lettera) + 1;
       break;
-    case "d":
+    case "z":
       posizione = alfabeto.indexOf(lettera) + 1;
       break;
   }
