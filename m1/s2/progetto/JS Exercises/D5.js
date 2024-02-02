@@ -114,3 +114,32 @@ while (numericArray[i] <= 32) {
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+const alfabeto = "abcdefghijklmnopqrstuvwxyz";
+const posizioneLettera = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  const lettera = charactersArray[i];
+  let posizione;
+
+  switch (lettera) {
+    case "g":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "n":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "u":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "z":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+    case "d":
+      posizione = alfabeto.indexOf(lettera) + 1;
+      break;
+  }
+
+  posizioneLettera.push(posizione);
+}
+
+console.log(posizioneLettera);
