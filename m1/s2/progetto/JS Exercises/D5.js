@@ -114,7 +114,7 @@ while (numericArray[i] <= 32) {
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
-const alfabeto = "abcdefghijklmnopqrstuvwxyz";
+const alfabeto = "abcdefghilmnopqrstuvz";
 const posizioneLettera = [];
 
 for (let i = 0; i < charactersArray.length; i++) {
