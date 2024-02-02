@@ -11,22 +11,27 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ["dog", "cat", "hamster", "redfish"];
-for (let i = 0; 1 < pets.length; i++) {
-  a = pets[i];
+for (let i = 0; i < pets.length; i++) {
+  console.log(pets[i]);
 }
-console.log(pets());
+
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
-console.log(pets.sort());
+pets.sort();
+console.log(pets);
+
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
-pets.sort().reverse();
+pets.reverse();
+console.log(pets);
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-pets.push(pets.splice(i, 1)[0]);
+const primoPet = pets.shift();
+pets.push(primoPet);
+
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
@@ -50,24 +55,47 @@ const cars = [
     trims: ["life", "style", "r-line"],
   },
 ];
-
-cars.licensePlate = "23AB33";
-
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = "12AB2" + i;
+}
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-
+const pandina = {
+  brand: "Fiat",
+  model: "Panda",
+  color: "white",
+  trims: ["xl", "vecchietto", "cappello"],
+  licensePlate: "23ER12",
+};
+cars.push(pandina);
+for (let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop();
+}
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
 
+for (let i = 0; i < cars.length; i++) {
+  justTrims.push(cars[i].trims[0]);
+}
+console.log(justTrims);
+
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
-
+for (let i = 0; i < cars.length; i++) {
+  const car = cars[i];
+  const primaLettera = car.color.charAt(0);
+  if (primaLettera === "b") {
+    console.log("Fizz");
+  } else {
+    console.log("Buzz");
+  }
+}
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
