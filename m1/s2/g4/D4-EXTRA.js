@@ -5,7 +5,10 @@
  se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
-function checkArray() {}
+function checkArray() {let somma=0
+let random =giveMeRandom(random)
+for(let i=0; i<random.length; i++)
+if (random[i]>5)}
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 2
@@ -24,7 +27,6 @@ function shoppingCartTotal() {
   for (let i = 0; i < shoppingCart.length; i++) {
     total = shoppingCart[i].price * shoppingCart[i].quantity;
   }
-  return console.log(total);
 }
 shoppingCartTotal();
 /* SCRIVI QUI LA TUA RISPOSTA */
