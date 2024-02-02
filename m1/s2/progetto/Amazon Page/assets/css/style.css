@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e9edee;
@@ -12,7 +15,7 @@ header {
 }
 nav {
   background-color: #364759;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 .menuLink {
   color: white;
@@ -61,7 +64,9 @@ main {
   margin-left: 1em;
 }
 .container-pics {
-  display: inline-flex;
+  display: flex;
+  text-align: center;
+  margin: 0 3em;
 }
 .pic-container img {
   width: 300px;
@@ -71,9 +76,10 @@ main {
   box-shadow: 10px 10px 40px 0px rgba(7, 5, 20, 0.4);
   object-fit: cover;
 }
-.cover-img .text {
-  display: black;
+.cover-images .text {
+  display: block;
   text-align: center;
+  margin-bottom: 2em;
 }
 .image1,
 .image2 {
@@ -95,7 +101,6 @@ main {
 }
 .back-to-top {
   background-color: #364759;
-  color: white;
 
   padding: 1em;
   text-align: center;
@@ -104,5 +109,5 @@ main {
   font-weight: bold;
 }
 #back-to-top-link {
-  scroll-behavior: smooth;
+  color: white;
 }
