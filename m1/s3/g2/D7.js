@@ -55,7 +55,13 @@ console.log(arrayNumeri([2, 3, 4, 5, 6], 1));
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
-
+function lunghezza(array) {
+  let lettere = array.map((parola) => {
+    return parola.length;
+  });
+  return lettere;
+}
+console.log(lunghezza(["amore", "sole"]));
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */ const dispari = [];
