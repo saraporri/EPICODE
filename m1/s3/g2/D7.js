@@ -29,6 +29,14 @@ console.log(filtrato);
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+function numeriTotale(arrayNum) {
+  let total = 0;
+  arrayNum.forEach((num) => {
+    total += num;
+  });
+  return total;
+}
+console.log(numeriTotale([2, 2, 3]));
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -175,7 +183,8 @@ const movies = [
 
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
-*/
+*/ function oldestMovie() {}
+console.log(oldestMovie());
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
