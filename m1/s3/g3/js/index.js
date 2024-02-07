@@ -3,7 +3,10 @@ invia.addEventListener("click", function (event) {
   event.preventDefault();
   let input = document.querySelector("input");
 
-  let listElement = document.createElement("li");
+  let listElement = document.createElement("p");
 
-  listElement.append(input.value);
+  listElement.textContent = input.value;
+
+  let lista = document.querySelector("#lista");
+  lista.appendChild(listElement);
 });
