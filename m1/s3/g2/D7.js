@@ -13,18 +13,20 @@ stringhe("Ombrellone", "Costiera");
 function array() {
   let randomArray = [];
   for (let i = 0; i < 10; i++) {
-    let random = Math.floor(Math.random() * 100);
+    let random = Math.floor(Math.random() * 101);
     randomArray.push(random);
   }
   return randomArray;
 }
 
 console.log(array());
-
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
-*/ const filtrato = array().filter((num) => num % 2 === 0);
-console.log(filtrato);
+  
+*/ function filtrato() {
+  return array().filter((num) => num % 2 === 0);
+}
+console.log(filtrato());
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
