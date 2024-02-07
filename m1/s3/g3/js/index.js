@@ -8,5 +8,9 @@ invia.addEventListener("click", function (event) {
   listElement.textContent = input.value;
 
   let lista = document.querySelector("#lista");
-  lista.appendChild(listElement);
+  lista.append(listElement);
+  listElement.addEventListener("click", function (event) {
+    event.preventDefault();
+    listElement.style.textDecoration = "line-through";
+  });
 });
