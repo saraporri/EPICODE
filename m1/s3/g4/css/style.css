@@ -1,0 +1,20 @@
+.cartellone {
+  background-color: #4a549c;
+  width: 100%;
+}
+.num-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 100%;
+}
+.numero {
+  color: #4a549c;
+  font-size: 3em;
+  line-height: 1.5;
+  flex: 0 1 calc(100% / 11);
+  background-color: #d6bbda;
+  border-radius: 50%;
+  text-align: center;
+  margin: 2px;
+}
