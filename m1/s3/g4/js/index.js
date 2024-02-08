@@ -5,3 +5,11 @@ for (let i = 1; i <= 90; i++) {
   numero.innerText = i;
   numWrap.append(numero);
 }
+
+const pescaBtn = document.querySelector(".pesca");
+let numPescato = document.querySelector(".numero-pescato");
+pescaBtn.addEventListener("click", function () {
+  let numRandom = Math.floor(Math.random() * 91);
+  numPescato.innerText = numRandom;
+});
+console.log(numPescato, pescaBtn);
