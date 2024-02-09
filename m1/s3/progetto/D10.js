@@ -320,12 +320,27 @@ const sumAllTheYears = (array) => {
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
-*/
+*/ const searchByTitle = function (array, search) {
+  return array.filter((movie) => movie.Title.toLowerCase().includes(search));
+};
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
+function searchAndDivide(str) {
+  const match = [];
+  const unmatch = [];
+  movies.forEach((movie) => {
+    if (movie.Title.toLowerCase().includes(str)) {
+      match.push(movie);
+    } else {
+      unmatch.push(movie);
+    }
+  });
+
+  return { match, unmatch };
+}
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
@@ -345,8 +360,13 @@ const sumAllTheYears = (array) => {
 }
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
-*/
-
+*/ function testoTd() {
+  let td = document.getElementsByTagName("td");
+  for (let i = 0; i < td.length; i++) {
+    let testo = td[i].innerText;
+    return console.log(testo);
+  }
+}
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
@@ -372,7 +392,12 @@ function redBackground() {
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-
+function addClassToTr() {
+  let tr = document.getElementsByTagName("tr");
+  for (let i = 0; i < tr.length; i++) {
+    tr[i].classList.add("test");
+  }
+}
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
