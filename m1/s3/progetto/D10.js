@@ -19,7 +19,7 @@ REGOLE
 
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
-*/ let me = { name: "sara", surname: "porricino", age: 29 };
+*/ let me = { name: "Sara", surname: "Porricino", age: 29 };
 
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
@@ -409,8 +409,13 @@ function redBackground() {
 */
 function emptyList() {
   const list = document.getElementById("myList");
-  list.innerHTML = "";
+  while (list.firstChild) {
+    list.removeChild(list.firstChild);
+  }
 }
+
+//Per svuotare e non eliminare: list.length=0
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
@@ -433,7 +438,13 @@ function addClassToTr() {
   ***
 
 */
+function halfTree(n) {
+  let tree = "*";
+  for (let i = 1; i < n; i++) tree += tree;
 
+  return console.log(tree);
+}
+halfTree(3);
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
