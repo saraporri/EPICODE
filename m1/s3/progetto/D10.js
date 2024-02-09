@@ -136,11 +136,28 @@ function rollTheDices(n) {
 }
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
-*/
+*/ function howManyDays(date) {
+  const today = new Date();
+  let day2 = new Date(date);
+  let timeDiff = today.getTime() - day2.getTime();
+  let daysDiff = Math.floor(timeDiff / (24 * 60 * 60 * 1000));
+  return daysDiff;
+}
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
-*/
+*/ function isTodayMyBirthday(date) {
+  const today = new Date();
+  const birthday = new Date(date);
+  if (
+    today.getMonth() === birthday.getMonth() &&
+    today.getDate() === birthday.getDate()
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // Arrays & Oggetti
 
@@ -345,7 +362,10 @@ function searchAndDivide(str) {
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
-
+function removeIndex(n) {
+  movies.splice(n, 1);
+  return movies;
+}
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
@@ -381,14 +401,16 @@ function redBackground() {
 */ function addElement() {
   const myList = document.getElementById("myList");
   const newElement = document.createElement("li");
-  newElement.innerText = "Nuovo elemento";
   return myList.appendChild(newElement);
 }
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-
+function emptyList() {
+  const list = document.getElementById("myList");
+  list.innerHTML = "";
+}
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
