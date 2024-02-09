@@ -438,13 +438,21 @@ function addClassToTr() {
   ***
 
 */
-function halfTree(n) {
-  let tree = "*";
-  for (let i = 1; i < n; i++) tree += tree;
+function halfTree(num) {
+  let tree = "";
+  for (let i = 1; i < num; i++) tree += "*" + "\n";
 
   return console.log(tree);
 }
 halfTree(3);
+
+//è sbagliatissimo sorry
+//──────▄▀▄─────▄▀▄
+//─────▄█░░▀▀▀▀▀░░█▄
+//─▄▄──█░░░░░░░░░░░█──▄▄
+//█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
+//era meglio cantare una canzone
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
