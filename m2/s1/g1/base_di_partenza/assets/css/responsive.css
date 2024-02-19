@@ -11,7 +11,7 @@ section h2 {
   background-color: #a3a3a3;
   text-transform: capitalize;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   body {
     font-size: 1em;
   }
@@ -34,7 +34,7 @@ section h2 {
     font-size: 0.7em;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   body {
     font-size: 1.4em;
   }
@@ -67,4 +67,68 @@ section h2 {
   button {
     padding: 1em 2em;
   }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 0 5em;
+    font-size: 2em;
+  }
+  header {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  header div {
+    display: inline-flex;
+  }
+  nav {
+    display: inline;
+    text-align: right;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  .badge {
+    width: 5%;
+  }
+}
+table {
+  margin: 5em auto;
+  width: 70%;
+}
+.container {
+  width: 100%;
+}
+
+.articoli div {
+  display: inline-block;
+  width: 33%;
+}
+.responsive {
+  display: flex;
+  margin: 0 auto;
+}
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+iframe {
+  width: 50%;
+  height: 400px;
+}
+section {
+  border-radius: 15px;
+  width: 50%;
+  font-size: 1.5em;
+  height: 400px;
+}
+input,
+button {
+  padding: 1em 2em;
+}
+footer {
+  font-size: 1em;
 }
