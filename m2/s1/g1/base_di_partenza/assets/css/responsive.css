@@ -1,0 +1,33 @@
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 1em;
+  }
+  .badge {
+    width: 20%;
+    border: 5px solid #01a0c6;
+    outline: 5px solid #a12572;
+  }
+  header div img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  nav li {
+    display: inline;
+  }
+  iframe {
+    height: 100px;
+  }
+  section h2 {
+    font-size: 1.2em;
+    background-color: #a3a3a3;
+    text-transform: capitalize;
+  }
+  section p {
+    font-size: 0.9em;
+  }
+
+  input,
+  button {
+    font-size: 0.7em;
+  }
+}
