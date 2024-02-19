@@ -132,3 +132,20 @@ button {
 footer {
   font-size: 1em;
 }
+
+@media print {
+  body {
+    font-weight: 4em;
+    letter-spacing: 1px;
+  }
+  .badge {
+    display: inline-flex;
+    width: 5%;
+  }
+  header,
+  footer,
+  .responsive,
+  .articoli {
+    display: none;
+  }
+}
