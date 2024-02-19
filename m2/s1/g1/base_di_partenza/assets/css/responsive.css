@@ -1,27 +1,30 @@
+.badge {
+  width: 20%;
+  border: 5px solid #01a0c6;
+  outline: 5px solid #a12572;
+}
+nav li {
+  display: inline;
+}
+section h2 {
+  font-size: 1.2em;
+  background-color: #a3a3a3;
+  text-transform: capitalize;
+}
 @media screen and (max-width: 320px) {
   body {
     font-size: 1em;
   }
-  .badge {
-    width: 20%;
-    border: 5px solid #01a0c6;
-    outline: 5px solid #a12572;
-  }
+
   header div img {
     max-width: 50%;
     margin: 0 auto;
   }
-  nav li {
-    display: inline;
-  }
+
   iframe {
     height: 100px;
   }
-  section h2 {
-    font-size: 1.2em;
-    background-color: #a3a3a3;
-    text-transform: capitalize;
-  }
+
   section p {
     font-size: 0.9em;
   }
@@ -29,5 +32,39 @@
   input,
   button {
     font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 1.4em;
+  }
+
+  .badge {
+    width: 10%;
+    border: 3px solid #01a0c6;
+    outline: 3px solid #a12572;
+  }
+  h1 {
+    width: 80%;
+    font-size: 3em;
+    line-height: 1;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  table {
+    text-align: center;
+    margin: 5em auto;
+  }
+  input,
+  button {
+    font-size: 0.5em;
+  }
+  input {
+    width: 70%;
+    padding: 1em;
+  }
+  button {
+    padding: 1em 2em;
   }
 }
