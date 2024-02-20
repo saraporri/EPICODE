@@ -347,9 +347,8 @@ aside div p:last-child {
 }
 .fa-tag {
   float: right;
-  right: 5px;
   font-size: 5em;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .icone {
   position: relative;
