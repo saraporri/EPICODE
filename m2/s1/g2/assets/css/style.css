@@ -19,6 +19,7 @@ hr {
 /* HEADER */
 header {
   position: sticky;
+  z-index: 2;
   top: 0;
   background: rgb(0, 160, 198);
   background: linear-gradient(
@@ -199,6 +200,7 @@ h1 + p {
   position: absolute;
   right: 150px;
   top: 65px;
+  z-index: 1;
 }
 .imgLeft {
   float: left;
