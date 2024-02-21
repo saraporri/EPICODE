@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  color: #612406;
+  gap: 30px;
+}
+.miele {
+  border-radius: 25% 25% 0 0;
+}
+.bio {
+  font-weight: bold;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.button {
+  background-color: #f3df85;
+  padding: 0.5em 2em;
+  border-radius: 15px;
+  width: 30%;
+  align-self: center;
+  text-align: center;
+}

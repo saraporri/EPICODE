@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #612406;
+}
+.logo {
+  width: 40%;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  flex-grow: 2;
+}
+.button {
+  background-color: #f3df85;
+  padding: 1em 2em;
+  border-radius: 20px;
+  width: 30%;
+  align-self: center;
+  text-align: center;
+  flex-grow: 1;
+}
+a {
+  text-decoration: none;
+  color: #612406;
+}
