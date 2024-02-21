@@ -3,22 +3,28 @@ article {
   flex-direction: row;
   gap: 20px;
   padding: 30px 50px;
-  color: #612406;
 }
-.miele {
-  width: 40%;
+.foto {
+  width: 100%;
 }
 .title {
-  font-weight: bold;
   margin-bottom: 20px;
   font-size: 1.2em;
 }
-@media only screen and (max-width: 480px) {
+.bold {
+  font-weight: bold;
+}
+.titolo {
+  font-size: 2em;
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
   article {
-    display: flex;
     flex-direction: column-reverse;
   }
-  .miele {
-    width: 100%;
+  .description {
+    display: flex;
+    flex-direction: column;
   }
 }

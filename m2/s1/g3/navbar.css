@@ -1,8 +1,10 @@
+body {
+  color: #612406;
+}
 nav {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  color: #612406;
 }
 .logo {
   width: 40%;
@@ -14,6 +16,11 @@ nav {
   font-size: 2em;
   font-weight: bold;
   flex-grow: 2;
+}
+@media only screen and(max-width:480px) {
+  nav {
+    flex-wrap: wrap;
+  }
 }
 .button {
   background-color: #f3df85;

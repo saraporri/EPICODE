@@ -3,9 +3,16 @@
   flex-direction: column;
   width: 40%;
   color: #612406;
-  gap: 30px;
+  gap: 20px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
 }
 .miele {
+  object-fit: cover;
   border-radius: 25% 25% 0 0;
 }
 .bio {
