@@ -1,0 +1,24 @@
+article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px 50px;
+  color: #612406;
+}
+.miele {
+  width: 40%;
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 480px) {
+  article {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .miele {
+    width: 100%;
+  }
+}
