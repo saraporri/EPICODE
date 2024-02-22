@@ -1,0 +1,39 @@
+body {
+  background-color: #666666;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+.box {
+  margin: 70px;
+  height: 250px;
+  width: 300px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  position: relative;
+}
+.yellow {
+  background-color: #f8f8c6;
+  transform: rotate(-6deg);
+  transition: transform 0.15s linear;
+}
+.green {
+  background-color: #c9f9cb;
+  transform: rotate(6deg);
+  transition: transform 0.15s linear;
+}
+.blue {
+  background-color: #c7c7f3;
+  transform: rotate(-10deg);
+  transition: transform 0.15s linear;
+}
+.box:hover {
+  transition: 300ms linear;
+  z-index: 1;
+  scale: 1.1;
+}
