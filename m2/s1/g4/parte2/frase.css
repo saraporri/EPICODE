@@ -11,6 +11,30 @@
 body {
   font-size: 3em;
 }
+.testoAlternato {
+  transform-style: preserve-3d;
+}
 .parole {
   color: #6a889c;
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  opacity: 0;
+  animation-name: scrollo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scrollo {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
