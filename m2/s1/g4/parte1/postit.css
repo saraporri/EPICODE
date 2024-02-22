@@ -12,7 +12,8 @@ body {
   height: 250px;
   width: 300px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  animation-duration: 10s;
+  animation-name: attacca;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   position: relative;
@@ -34,6 +35,15 @@ body {
 }
 .box:hover {
   transition: 300ms linear;
+  cursor: pointer;
   z-index: 1;
   scale: 1.1;
+}
+@keyframes attacca {
+  0% {
+    transform: translateY(-2500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

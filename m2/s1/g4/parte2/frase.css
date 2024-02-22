@@ -8,3 +8,9 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+  font-size: 3em;
+}
+.parole {
+  color: #6a889c;
+}
