@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+}
+* {
   box-sizing: border-box;
 }
 .container {
@@ -90,6 +92,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
 .trending-title {
   margin-top: 50px;
@@ -114,7 +117,8 @@ h1 {
 .trending-article-main-title,
 .article-main-title,
 .author,
-.trending-author {
+.trending-author,
+.tag-title {
   font-weight: bold;
 }
 .trending-date,
@@ -186,4 +190,44 @@ h1 {
 .bookmark:hover {
   opacity: 1;
   font-weight: bold;
+}
+
+.sticky {
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.cloud-tags {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tag-button {
+  color: #000;
+  background-color: #dfd7d7;
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+.cloud-see-more {
+  color: #1a8917;
+  margin-bottom: 40px;
+}
+.extra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.extra-link {
+  font-size: 1.1em;
 }
