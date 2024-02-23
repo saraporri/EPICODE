@@ -38,8 +38,33 @@ a {
   border-radius: 100em;
 }
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align: left;
   background-color: #ffc017;
   border-bottom: 1px solid #000;
 
-  height: 600px;
+  height: 500px;
+}
+
+h1 {
+  font-size: 106px;
+  font-family: "spectral", sans serif;
+  margin-bottom: 35px;
+}
+.subtitle {
+  width: 80%;
+  font-size: 22px;
+  margin-bottom: 80px;
+}
+
+.reading {
+  width: 213px;
+  text-align: center;
+  font-size: 20px;
+  align-self: flex-start;
+  margin: 0;
 }
