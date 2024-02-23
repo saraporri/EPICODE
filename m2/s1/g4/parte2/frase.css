@@ -23,7 +23,7 @@ body {
 i {
   opacity: 0;
   animation-name: scrollo;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
