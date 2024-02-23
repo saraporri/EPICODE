@@ -3,23 +3,30 @@ body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+.container {
+  display: block;
+  width: 90%;
+  margin: 0;
+}
 header {
-  width: 100%;
   background-color: #ffc017;
   display: flex;
+  flex-direction: row;
+  width: 100%;
 }
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  height: 90px;
   width: 100%;
 
   background-color: #ffc017;
   border-bottom: 1px solid #000;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 a {
   text-decoration: none;
@@ -31,30 +38,36 @@ a {
 .button {
   margin-left: 30px;
   font-size: 14px;
+  padding: 8px 20px;
   background-color: #000;
   color: #fff;
   font-weight: bold;
-  padding: 10px 18px;
   border-radius: 100em;
 }
 main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding-top: 50px;
   text-align: left;
   background-color: #ffc017;
   border-bottom: 1px solid #000;
-
+  z-index: 1;
   height: 500px;
+  width: 100%;
 }
 
+.title-subtitle {
+  display: flex;
+  flex-direction: column;
+}
 h1 {
   font-size: 106px;
   font-family: "spectral", sans serif;
   margin-bottom: 35px;
 }
+
 .subtitle {
   width: 80%;
   font-size: 22px;
@@ -62,9 +75,115 @@ h1 {
 }
 
 .reading {
+  padding: 17px 70px;
   width: 213px;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   align-self: flex-start;
+  font-weight: 400;
   margin: 0;
+}
+
+.trending-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.trending-title {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.trending-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.trending-article-main-title {
+  font-size: 1.3em;
+}
+.trending-article {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  margin: 50px;
+}
+.trending-article-main-title,
+.article-main-title,
+.author,
+.trending-author {
+  font-weight: bold;
+}
+.trending-date,
+.description,
+.date {
+  opacity: 0.7;
+}
+.trending-author {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 7 px;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 25px;
+}
+.articles {
+  width: 40%;
+}
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin: 100px auto;
+}
+.author {
+  margin-bottom: 20px;
+}
+.article-main-title {
+  font-size: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.article-img {
+  cursor: pointer;
+
+  vertical-align: middle;
+  width: 200px;
+  aspect-ratio: auto 200 / 134;
+  height: 134px;
+}
+.bottom-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.star {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.btn-topic {
+  background-color: #dfd7d7;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.bookmark {
+  cursor: pointer;
+  vertical-align: middle;
+  opacity: 0.7;
+  width: 25px;
+  height: 25px;
+}
+.bookmark:hover {
+  opacity: 1;
+  font-weight: bold;
 }
