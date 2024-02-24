@@ -154,9 +154,10 @@ h1 {
   display: inline-block;
 }
 
-.trending-author .tooltiptext {
+.trending-author .tooltiptext,
+.author .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 150px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: #000;
@@ -168,7 +169,8 @@ h1 {
   top: -30px;
   left: 70%;
 }
-.trending-author .tooltiptext::after {
+.trending-author .tooltiptext::after,
+.author .tooltiptext::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -179,12 +181,14 @@ h1 {
   border-color: transparent #1a8917 transparent transparent;
 }
 .tooltiptext button {
+  margin: 8px;
   cursor: pointer;
   color: #fff;
   background: #1a8917;
   border-radius: 20px;
 }
-.trending-author:hover .tooltiptext {
+.trending-author:hover .tooltiptext,
+.author:hover .tooltiptext {
   visibility: visible;
 }
 .icon {
@@ -206,7 +210,9 @@ h1 {
   gap: 50px;
 }
 .author {
+  cursor: pointer;
   margin-bottom: 15px;
+  position: relative;
 }
 .article-main-title {
   font-size: 1.4em;
