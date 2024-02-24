@@ -30,6 +30,10 @@ nav {
   border-bottom: 1px solid #000;
   position: fixed;
   z-index: 2;
+  transition: 400ms ease-in-out;
+}
+.nav-scrolled {
+  background-color: #fff;
 }
 .nav-content {
   display: flex;
@@ -49,6 +53,10 @@ a {
   background-color: #000;
   color: #fff;
   border-radius: 100em;
+  transition: 400ms ease-in-out;
+}
+.button-scrolled {
+  background-color: #1a8917;
 }
 main {
   display: flex;
