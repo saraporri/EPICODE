@@ -58,7 +58,7 @@ main {
   background-color: #ffc017;
   border-bottom: 1px solid #000;
   z-index: 1;
-  height: 500px;
+  height: 650px;
   width: 100%;
 }
 .container-content {
@@ -73,15 +73,15 @@ main {
 }
 h1 {
   margin-top: 100px;
-  font-size: 120px;
+  font-size: 8em;
   font-family: "spectral", sans serif;
 }
 .m {
   height: 100%;
 }
 .subtitle {
-  width: 80%;
-  font-size: 22px;
+  width: 65%;
+  font-size: 1.7em;
 }
 
 .reading {
@@ -147,6 +147,7 @@ h1 {
 }
 .articles-block {
   display: flex;
+
   flex-direction: column;
   gap: 80px;
 }
@@ -255,4 +256,37 @@ aside {
 .extra-link {
   color: #6b6b6b;
   font-size: 1.1em;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  nav {
+    width: fit-content;
+    justify-content: flex-start;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+  .trending-box {
+    flex-direction: row;
+    width: 100%;
+  }
+  .trending-title {
+    text-transform: uppercase;
+  }
+  .sticky {
+    flex-direction: column;
+  }
+  .sticky-content {
+    position: static;
+    order: 1;
+  }
+  .cloud-see-more {
+    display: none;
+  }
+  .articles-block {
+    order: 2;
+  }
 }
