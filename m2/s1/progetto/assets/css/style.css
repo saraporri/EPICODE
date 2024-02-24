@@ -173,9 +173,8 @@ h1 {
 .article-img {
   cursor: pointer;
   vertical-align: middle;
-  width: 200px;
-  aspect-ratio: auto 200 / 134;
-  height: 134px;
+  width: 250px;
+  height: 170px;
 }
 .bottom-text {
   display: flex;
