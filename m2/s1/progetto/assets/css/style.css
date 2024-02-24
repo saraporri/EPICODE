@@ -76,7 +76,9 @@ h1 {
   font-size: 120px;
   font-family: "spectral", sans serif;
 }
-
+.m {
+  height: 100%;
+}
 .subtitle {
   width: 80%;
   font-size: 22px;
@@ -97,6 +99,7 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 80px;
 }
 .trending-title {
   font-size: 1.2em;
@@ -142,30 +145,33 @@ h1 {
   border-radius: 50%;
   width: 25px;
 }
-.articles {
-  width: 40%;
+.articles-block {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 .article {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
-  margin: 100px auto;
 }
 .author {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .article-main-title {
-  font-size: 20px;
+  font-size: 1.4em;
 }
-.text {
+.article-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+.description {
+  font-size: 1.2em;
+}
 .article-img {
   cursor: pointer;
-
   vertical-align: middle;
   width: 200px;
   aspect-ratio: auto 200 / 134;
@@ -182,7 +188,8 @@ h1 {
   vertical-align: middle;
 }
 .btn-topic {
-  background-color: #dfd7d7;
+  color: #000;
+  background-color: #f2f2f2;
   padding: 5px 10px;
   border-radius: 25px;
 }
@@ -199,10 +206,17 @@ h1 {
 }
 
 .sticky {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  justify-content: center;
+}
+aside {
+  position: relative;
+}
+.sticky-content {
   position: sticky;
-  right: 0;
-  top: 100px;
-  z-index: 1;
+  top: 130px;
 }
 .cloud-tags {
   font-size: 1.2em;
@@ -210,10 +224,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
 }
 .tags {
-  width: 30%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -221,20 +234,26 @@ h1 {
 }
 .tag-button {
   color: #000;
-  background-color: #dfd7d7;
+  background-color: #f2f2f2;
   padding: 5px 12px;
   border-radius: 25px;
 }
 .cloud-see-more {
+  cursor: pointer;
   color: #1a8917;
   margin-bottom: 40px;
 }
+.cloud-see-more:hover {
+  color: #000;
+}
 .extra {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
 .extra-link {
+  color: #6b6b6b;
   font-size: 1.1em;
 }
