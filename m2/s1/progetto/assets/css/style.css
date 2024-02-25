@@ -118,6 +118,7 @@ h1 {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 100px;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 .trending-title {
@@ -345,8 +346,7 @@ aside {
   .subtitle {
     font-size: 1.5em;
   }
-  .m {
-  }
+
   .trending-block {
     width: 100%;
     font-size: 0.7em;
@@ -354,6 +354,8 @@ aside {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 2em;
+    margin-bottom: 50px;
   }
   .trending-article {
     margin: 10px auto;
@@ -372,6 +374,10 @@ aside {
   .cloud-tags {
     font-size: 1em;
   }
+  .tags {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d1d1d1;
+  }
   .tag-button {
     background-color: #fff;
     border: 1px solid #d1d1d1;
@@ -388,7 +394,7 @@ aside {
     gap: 50px;
   }
 }
-@media screen and (max-width: 517px) {
+@media screen and (max-width: 526px) {
   .nav-links a:not(.button, .sign),
   .m {
     display: none;
