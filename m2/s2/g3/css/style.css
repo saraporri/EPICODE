@@ -133,4 +133,22 @@ table {
   border-spacing: 0;
 }
 
+body,
+a {
+  color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #640fc5;
+}
+
 /*# sourceMappingURL=style.css.map */

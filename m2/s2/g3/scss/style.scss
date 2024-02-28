@@ -1,1 +1,17 @@
 @import "reset";
+@import "font";
+@import "colori";
+body,
+a {
+  color: map-get($colori, testo);
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  background-color: map-get($colori, bg_hero);
+}
