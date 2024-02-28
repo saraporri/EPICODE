@@ -151,4 +151,34 @@ header {
   background-color: #640fc5;
 }
 
+h1 {
+  color: #28064f;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.hero {
+  height: 500px;
+  position: relative;
+}
+
+.approfondisci {
+  background-color: #0e6cff;
+}
+
+.accedi {
+  background-color: #ff8700;
+}
+
+.contattaci {
+  background-color: #4caf50;
+}
+
+.main-pc {
+  border-radius: 5%;
+  position: absolute;
+  top: 120px;
+  left: 900px;
+}
+
 /*# sourceMappingURL=style.css.map */
