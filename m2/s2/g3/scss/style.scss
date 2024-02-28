@@ -1,6 +1,12 @@
 @import "reset";
 @import "font";
 @import "colori";
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
 body,
 a {
   color: map-get($colori, testo);

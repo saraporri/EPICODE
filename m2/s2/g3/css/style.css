@@ -133,6 +133,12 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
 body,
 a {
   color: #f4f4f4;
