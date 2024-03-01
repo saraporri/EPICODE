@@ -4,9 +4,7 @@
 body {
   background-color: $bg-color;
 }
-header {
-  position: fixed;
-}
+
 .netflix-logo {
   width: 100px;
 }
@@ -23,4 +21,7 @@ header {
 }
 .splide {
   width: 100%;
+}
+.p-footer {
+  font-size: 10px;
 }
