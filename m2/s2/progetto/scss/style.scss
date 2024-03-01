@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variabili";
+
+body {
+  background-color: $bg-color;
+}
+
+.netflix-logo {
+  width: 100px;
+}
+.avatar {
+  width: 30px;
+}
+.tv-shows {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
