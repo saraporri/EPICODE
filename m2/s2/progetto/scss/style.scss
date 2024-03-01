@@ -4,7 +4,9 @@
 body {
   background-color: $bg-color;
 }
-
+header {
+  position: fixed;
+}
 .netflix-logo {
   width: 100px;
 }
@@ -18,4 +20,7 @@ body {
 .title {
   font-weight: bold;
   font-size: 1.3em;
+}
+.splide {
+  width: 100%;
 }
