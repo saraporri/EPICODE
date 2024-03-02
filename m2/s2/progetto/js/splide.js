@@ -1,12 +1,12 @@
 var splide = new Splide("#image-carousel", {
   perPage: 6,
-  gap: "2rem",
+  gap: ".9rem",
   autoWidth: true,
 
   breakpoints: {
     640: {
       perPage: 2,
-      gap: ".7rem",
+      gap: ".4rem",
       height: "6rem",
     },
     480: {
@@ -20,13 +20,13 @@ var splide = new Splide("#image-carousel", {
 splide.mount();
 var splide = new Splide("#image-carousel2", {
   perPage: 6,
-  gap: "2rem",
+  gap: ".9rem",
   autoWidth: true,
 
   breakpoints: {
     640: {
       perPage: 2,
-      gap: ".7rem",
+      gap: ".4rem",
       height: "6rem",
     },
     480: {
@@ -40,12 +40,12 @@ var splide = new Splide("#image-carousel2", {
 splide.mount();
 var splide = new Splide("#image-carousel3", {
   perPage: 6,
-  gap: "2rem",
+  gap: ".9rem",
   autoWidth: true,
   breakpoints: {
     640: {
       perPage: 2,
-      gap: ".7rem",
+      gap: ".4rem",
       height: "6rem",
     },
     480: {

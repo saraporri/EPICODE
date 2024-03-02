@@ -6,7 +6,7 @@
   color: $text-color;
 }
 .netflix-logo {
-  width: 100px;
+  width: 120px;
 }
 header {
   font-weight: bold;
@@ -22,7 +22,13 @@ header {
 .title {
   font-weight: bold;
   opacity: 0.8;
-  font-size: 1.6em;
+  font-size: 1em;
+  @media (min-width: 641px) {
+    font-size: 1.3em;
+  }
+  @media (min-width: 990px) {
+    font-size: 1.6em;
+  }
 }
 .splide__slide img {
   width: 100%;
@@ -33,7 +39,7 @@ header {
   font-size: 12px;
 }
 .gigio {
-  width: 150px;
+  width: 170px;
 }
 .edit {
   font-size: 3em;

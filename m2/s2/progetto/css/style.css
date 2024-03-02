@@ -11850,7 +11850,7 @@ textarea.form-control-lg {
 }
 
 .netflix-logo {
-  width: 100px;
+  width: 120px;
 }
 
 header {
@@ -11869,7 +11869,17 @@ header {
 .title {
   font-weight: bold;
   opacity: 0.8;
-  font-size: 1.6em;
+  font-size: 1em;
+}
+@media (min-width: 641px) {
+  .title {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 990px) {
+  .title {
+    font-size: 1.6em;
+  }
 }
 
 .splide__slide img {
@@ -11883,7 +11893,7 @@ header {
 }
 
 .gigio {
-  width: 150px;
+  width: 170px;
 }
 
 .edit {
