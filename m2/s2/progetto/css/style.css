@@ -11846,10 +11846,15 @@ textarea.form-control-lg {
 }
 .diventaneropls {
   background-color: #141414;
+  color: #fff;
 }
 
 .netflix-logo {
   width: 100px;
+}
+
+header {
+  font-weight: bold;
 }
 
 .avatar {
@@ -11863,7 +11868,8 @@ textarea.form-control-lg {
 
 .title {
   font-weight: bold;
-  font-size: 1.3em;
+  opacity: 0.8;
+  font-size: 1.6em;
 }
 
 .splide__slide img {
@@ -11873,7 +11879,7 @@ textarea.form-control-lg {
 }
 
 .p-footer {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .edit {

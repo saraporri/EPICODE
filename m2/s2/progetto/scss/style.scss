@@ -3,10 +3,13 @@
 
 .diventaneropls {
   background-color: $bg-color;
+  color: #fff;
 }
-
 .netflix-logo {
   width: 100px;
+}
+header {
+  font-weight: bold;
 }
 .avatar {
   width: 30px;
@@ -17,7 +20,8 @@
 }
 .title {
   font-weight: bold;
-  font-size: 1.3em;
+  opacity: 0.8;
+  font-size: 1.6em;
 }
 .splide__slide img {
   width: 100%;
@@ -25,7 +29,7 @@
   object-fit: cover;
 }
 .p-footer {
-  font-size: 10px;
+  font-size: 12px;
 }
 .edit {
   font-size: 3em;
