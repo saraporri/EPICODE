@@ -26,36 +26,33 @@
       </nav>
     </header>
     <div class="container">
-      <div class="card-body border-bottom mb-3">
-        <div class="edit d-flex justify-content-center">Edit Profile</div>
+      <div
+        class="edit d-flex justify-content-start border-bottom border-secondary">
+        Edit Profile
       </div>
-    </div>
 
-    <div class="profile d-flex justify-content-center">
-      <div class="card mb-3 border-0" style="max-width: 600px">
+      <div class="profile d-flex justify-content-center">
         <div class="row g-0">
           <div class="col-md-4">
             <div class="gigio position-relative">
               <img
                 src="./images/gigio.jpg"
                 class="img-fluid rounded d-none d-lg-block"
-                alt="..." />
+                alt="gigio avatar" />
             </div>
             <button
               type="button"
-              class="btn btn-secondary d-none d-lg-block btn-sm position-absolute bottom-40 start-30 translate-middle p-2 border border-light rounded-circle">
+              class="btn btn-dark d-none d-lg-block btn-sm position-absolute bottom-40 start-30 translate-middle p-2 border border-light rounded-circle">
               <i class="bi bi-pencil"></i>
             </button>
           </div>
           <div class="col-md-8">
-            <div class="card-body border-0 border-bottom">
-              <h5 class="card-title bg-secondary text-white p-2">
-                Strive Student
-              </h5>
+            <div class="card-body border-0 border-bottom border-secondary">
+              <h5 class="bg-secondary text-white p-2">Strive Student</h5>
               <div class="profile-title">Language:</div>
               <div class="btn-group">
                 <button
-                  class="btn border border-dark px-5 btn-sm dropdown-toggle"
+                  class="btn border rounded-0 text-white px-5 btn-sm dropdown-toggle mb-4"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -67,7 +64,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <div class="card-body border-bottom">
+              <div class="card-body border-bottom border-secondary">
                 <div class="profile-title">Maturity Settings</div>
                 <div class="bg-secondary text-white p-2">
                   ALL MATURITY RATINGS
@@ -78,16 +75,16 @@
 
                 <button
                   type="button"
-                  class="btn btn-white btn-sm border border-bg-secondary rounded-0 px-5">
+                  class="btn btn-sm border border-secondary rounded-0 text-secondary px-5 mb-4">
                   Edit
                 </button>
               </div>
-              <div class="card-body border-bottom">
+              <div class="card-body border-bottom border-secondary mt-4">
                 <div class="profile-title">Autoplay Controls</div>
 
                 <div class="form-check">
                   <input
-                    class="form-check-input bg-secondary"
+                    class="form-check-input bg-secondary p-3"
                     type="checkbox"
                     value=""
                     id="flexCheckChecked"
@@ -98,7 +95,7 @@
                 </div>
                 <div class="form-check">
                   <input
-                    class="form-check-input bg-secondary"
+                    class="form-check-input bg-secondary p-3"
                     type="checkbox"
                     value=""
                     id="flexCheckChecked"
@@ -125,5 +122,6 @@
         </div>
       </div>
     </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
