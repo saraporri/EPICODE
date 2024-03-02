@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variabili";
 
-body {
+.diventaneropls {
   background-color: $bg-color;
 }
 
@@ -19,8 +19,10 @@ body {
   font-weight: bold;
   font-size: 1.3em;
 }
-.splide {
+.splide__slide img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .p-footer {
   font-size: 10px;
