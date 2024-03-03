@@ -11913,4 +11913,10 @@ header {
   font-size: 2em;
 }
 
+.container-settings {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
 /*# sourceMappingURL=style.css.map */
