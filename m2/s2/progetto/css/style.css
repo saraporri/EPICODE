@@ -11918,5 +11918,10 @@ header {
   margin: 0 auto;
   width: 60%;
 }
+@media (max-width: 1155px) {
+  .container-settings {
+    width: fit-content;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

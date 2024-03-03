@@ -60,4 +60,7 @@ header {
   display: block;
   margin: 0 auto;
   width: 60%;
+  @media (max-width: 1155px) {
+    width: fit-content;
+  }
 }
