@@ -8,11 +8,31 @@
   <body>
     <h1></h1>
     <form>
-      <input type="text" />
+      <input type="text" id="text" />
       <button type="submit" id="carica">Carica</button>
       <button type="submit" id="elimina">Elimina</button>
     </form>
 
-    <script></script>
+    <script>
+      let text = document.getElementById("text");
+      let carica = document.querySelector("#carica");
+      let elimina = document.querySelector("#elimina");
+
+      let titolo = document.getElementsByTagName("h1")[0];
+      carica.addEventListener("click", function () {
+        event.preventDefault();
+        let valore = text.value;
+
+        localStorage.setItem("inputValue", valore);
+        titolo.innerHTML = valore;
+      });
+      elimina.addEventListener("click", function () {
+        event.preventDefault();
+        let valore = text.value;
+
+        localStorage.removeItem("inputValue", valore);
+        titolo.innerHTML = null;
+      });
+    </script>
   </body>
 </html>
