@@ -12,7 +12,7 @@
       <button type="submit" id="carica">Carica</button>
       <button type="submit" id="elimina">Elimina</button>
     </form>
-
+    <h2 id="count"></h2>
     <script>
       let text = document.getElementById("text");
       let carica = document.querySelector("#carica");
@@ -33,6 +33,16 @@
         localStorage.removeItem("inputValue", valore);
         titolo.innerHTML = null;
       });
+      const countElement = document.getElementById("count");
+
+      let count = 0;
+
+      let interval = setInterval(function () {
+        count++;
+        countElement.innerText = count;
+
+        sessionStorage.setItem("timer", count);
+      }, 1000);
     </script>
   </body>
 </html>
