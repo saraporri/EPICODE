@@ -27,3 +27,7 @@ class User {
 let sara = new User("Sara", 29);
 let result = sara.compareAges();
 console.log(result);
+
+let userInfo = document.getElementById("info");
+
+class Pet {}
