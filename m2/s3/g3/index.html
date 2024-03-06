@@ -36,6 +36,15 @@
             price.classList.add("card-text");
             price.innerText = books.price;
             col.appendChild(price);
+            let scarta = document.createElement("a");
+            scarta.classList.add("btn", "btn-primary");
+            scarta.innerText = "Scarta";
+            col.appendChild(scarta);
+            scarta.addEventListener("click", function (event) {
+              event.preventDefault();
+
+              col.parentNode.removeChild(col);
+            });
           }
         });
     </script>
