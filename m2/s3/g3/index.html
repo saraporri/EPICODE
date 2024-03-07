@@ -40,9 +40,7 @@
             scarta.classList.add("btn", "btn-primary");
             scarta.innerText = "Scarta";
             col.appendChild(scarta);
-            scarta.addEventListener("click", function (event) {
-              event.preventDefault();
-
+            scarta.addEventListener("click", function () {
               col.parentNode.removeChild(col);
             });
           }
