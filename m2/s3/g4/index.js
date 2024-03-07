@@ -8,7 +8,15 @@ async function chiamata(query) {
     },
   }).then((dati) => dati.json());
 }
-
-chiamata("pizza").then((pizze) => {
-  console.log(pizze);
+let load = document.querySelector(".load");
+load.addEventListener("click", () => {
+  chiamata("kittens").then((dati) => {
+    console.log(dati);
+    let img = document.getElementsByTagName("img");
+    dati.photos.forEach((photo, i) => {
+      if (i < img.length) {
+        img[i].src = photo.src.landscape;
+      }
+    });
+  });
 });
