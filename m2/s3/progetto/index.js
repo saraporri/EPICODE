@@ -23,6 +23,9 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
 
       document.querySelector(".row").append(card);
     }
+
+    const spinner = document.getElementById("spinner");
+    spinner.classList.add("d-none");
   });
 
 function createClone() {
