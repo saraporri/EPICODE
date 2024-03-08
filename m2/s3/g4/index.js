@@ -19,4 +19,17 @@ load.addEventListener("click", () => {
       }
     });
   });
+
+  let second = document.querySelector(".second");
+  second.addEventListener("click", () => {
+    chiamata("puppies").then((dati) => {
+      console.log(dati);
+      let img = document.getElementsByTagName("img");
+      dati.photos.forEach((photo, i) => {
+        if (i < img.length) {
+          img[i].src = photo.src.landscape;
+        }
+      });
+    });
+  });
 });
