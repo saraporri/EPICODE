@@ -4,13 +4,13 @@ submit.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("Invio dati");
 
-  const name = document.getElementById("name").value;
-  const description = document.getElementById("description").value;
-  const price = document.getElementById("price").value;
-  const imageUrl = document.getElementById("imageUrl").value;
-  const brand = document.getElementById("brand").value;
+  const name = document.querySelector("#name").value;
+  const brand = document.querySelector("#brand").value;
+  const price = document.querySelector("#price").value;
+  const imageUrl = document.querySelector("#imageUrl").value;
+  const description = document.querySelector("#description").value;
 
-  const newProduct = {
+  let newProduct = {
     name,
     description,
     price,

@@ -16,15 +16,17 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       let img = card.querySelector("#img");
       let name = card.querySelector("#name");
       let price = card.querySelector("#price");
-
+      let editBtn = card.querySelector("#edit-btn");
       img.src = newProduct.imageUrl;
       name.innerText = newProduct.name;
       price.innerText = newProduct.price;
 
+      editBtn.href = `edit.html?id=${newProduct._id}`;
+
       document.querySelector(".row").append(card);
     }
 
-    const spinner = document.getElementById("spinner");
+    const spinner = document.querySelector("#spinner");
     spinner.classList.add("d-none");
   });
 
