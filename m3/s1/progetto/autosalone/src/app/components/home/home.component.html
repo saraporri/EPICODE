@@ -2,7 +2,7 @@
 
 
 
-<div class="card"  *ngFor="let car of cars"  [ngClass]="{
+<div class="card"  *ngFor="let car of randomCars"  [ngClass]="{
   'bg-success': car.available,
   'bg-danger': !car.available
 }">
