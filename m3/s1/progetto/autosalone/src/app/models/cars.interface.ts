@@ -1,4 +1,4 @@
-export interface Cars {
+export interface iCars {
     brand: string
     brandLogo: string
     model: string
