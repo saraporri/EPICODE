@@ -25,4 +25,8 @@ export class CarsService {
     .then(res => res.filter(c => !c.available))
   }
 
+  getCarById(id:string):Promise<iCars | undefined>{
+    return this.getAllCars()
+    .then(res => res.find(c => c.id == id))
+  }
 }
