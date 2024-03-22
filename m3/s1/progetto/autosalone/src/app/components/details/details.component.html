@@ -1,9 +1,21 @@
-<div class="details">
-  <h2>Dettagli della Macchina</h2>
-  <p>ID: {{ car.id }}</p>
-  <p>Marca: {{ car.brand }}</p>
-  <p>Modello: {{ car.model }}</p>
-  <p>Anno: {{ car.year }}</p>
-  <p>Prezzo: {{ car.price }}</p>
-  <!-- Aggiungi altre informazioni se necessario -->
-</div>
+
+
+<div class="row"><div class="col-12 d-flex justify-content-center my-4">
+
+
+<div class="card d-flex text-center"  *ngIf="car"  [ngClass]="{
+  'bg-success': car.available,
+  'bg-danger': !car.available
+}">
+  <img [src]="car.modelImage" class="card-img-top" alt="Car">
+  <div class="card-body text-white">
+    <h2>{{car.model}}</h2>
+
+    <div>Brand: {{car.brand}}</div>
+    <div>Model: {{car.model}}</div>
+    <div>Year: {{car.year}}</div>
+    <div>Price: {{car.price}}</div>
+    <button type="button" class="btn btn-secondary mt-3" [routerLink]="['/cars', car.id]">Details</button></div>
+
+  </div>
+</div></div>
