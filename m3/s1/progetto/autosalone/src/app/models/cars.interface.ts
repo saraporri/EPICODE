@@ -6,4 +6,5 @@ export interface iCars {
     year: number
     price: number
     available: boolean
+    id:number
   }

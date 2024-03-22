@@ -6,7 +6,8 @@
         "modelImage": "https://picsum.photos/200/300?random=1",
         "year": 2015,
         "price": 7500,
-        "available": false
+        "available": false,
+        "id":1
     },
     {
         "brand": "Fiat",
@@ -15,7 +16,8 @@
         "modelImage": "https://picsum.photos/200/300?random=2",
         "year": 2010,
         "price": 3500,
-        "available": true
+        "available": true,
+        "id":2
     },
     {
         "brand": "Ford",
@@ -24,7 +26,8 @@
         "modelImage": "https://picsum.photos/200/300?random=3",
         "year": 2009,
         "price": 5200,
-        "available": false
+        "available": false,
+        "id":3
     },
     {
         "brand": "Ford",
@@ -33,7 +36,8 @@
         "modelImage": "https://picsum.photos/200/300?random=4",
         "year": 2014,
         "price": 9700,
-        "available": true
+        "available": true,
+        "id":4
     },
     {
         "brand": "Audi",
@@ -42,7 +46,8 @@
         "modelImage": "https://picsum.photos/200/300?random=5",
         "year": 2012,
         "price": 4300,
-        "available": true
+        "available": true,
+        "id":5
     },
     {
         "brand": "Audi",
@@ -51,6 +56,7 @@
         "modelImage": "https://picsum.photos/200/300?random=6",
         "year": 2020,
         "price": 41700,
-        "available": false
+        "available": false,
+        "id":6
     }
 ]
