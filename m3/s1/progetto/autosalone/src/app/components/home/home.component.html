@@ -1,8 +1,13 @@
 
 
-<div class="row d-flex "><div class="col-12 d-flex justify-content-between "><img routerLink="/fiat" src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/640px-Logo_della_Fiat.svg.png" alt="fiat" class="logo"><img routerLink="/ford" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png" alt="ford" class="logo"><img routerLink="/audi" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png" alt="audi" class="logo"></div></div>
+<div class="row d-flex my-5">
+  <h1 class="text-center mb-4"> I nostri marchi</h1><div class="col-12 d-flex justify-content-between "><img routerLink="/fiat" src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/640px-Logo_della_Fiat.svg.png" alt="fiat" class="logo"><img routerLink="/ford" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png" alt="ford" class="logo"><img routerLink="/audi" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png" alt="audi" class="logo"></div></div>
+<div class="row d-flex flex-column">
 
-<div class="card"  *ngFor="let car of randomCars"  [ngClass]="{
+<h2 class="text-center mb-4">In evidenza</h2>
+
+  <div class="div d-flex justify-content-evenly">
+<div class="card "  *ngFor="let car of randomCars"  [ngClass]="{
   'bg-success': car.available,
   'bg-danger': !car.available
 }">
@@ -11,7 +16,7 @@
     <h2>{{car.model}}</h2>
 
     <h6>{{car.brand}}</h6>
-    <button type="button" class="btn btn-secondary" [routerLink]="['/cars', car.id]">Details</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['/cars', car.id]">Details</button></div>
 
-  </div>
+  </div></div>
 </div>

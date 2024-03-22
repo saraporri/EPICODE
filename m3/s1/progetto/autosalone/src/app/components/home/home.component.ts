@@ -21,7 +21,8 @@ constructor(private carsSvc:CarsService){}
 
 
     ngOnInit(): void {
-        this.carsSvc.getAllCars().then(res=>{this.cars=res;this.getRandomCars(2)});
+        this.carsSvc.getAllCars().then(res=>{this.cars=res;
+          this.getRandomCars(2)});
     }
 
 
