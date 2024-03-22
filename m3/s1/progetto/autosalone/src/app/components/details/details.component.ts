@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,19 +6,13 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
 })
-export class DetailsComponent {
-constructor(private router:ActivatedRoute){}
 
-ngOnInit(){
+  export class DetailsComponent implements OnInit {
+    constructor(private router: ActivatedRoute) {}
 
-
-  this.router.params.subscribe((parametriDellaRotta:any) => {
-
-    console.log(parametriDellaRotta.id);
-
-
-  })
-
-
-
-}}
+    ngOnInit() {
+      this.router.params.subscribe((routeParams: any) => {
+        console.log(routeParams.id);
+      });
+    }
+  }

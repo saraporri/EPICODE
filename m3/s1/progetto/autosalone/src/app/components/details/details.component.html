@@ -1,6 +1,20 @@
-<div class="card" >
-  <img src="" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
+<div class="div d-flex justify-content-evenly">
+  <div class="card "  *ngFor="let car of cars"  [ngClass]="{
+    'bg-success': car.available,
+    'bg-danger': !car.available
+  }">
+    <img [src]="car.modelImage" class="card-img-top" alt="Car">
+    <div class="card-body text-white">
+      <h2>{{car.model}}</h2>
+
+      <h6>{{car.brand}}</h6>
+      <button type="button" class="btn btn-secondary" [routerLink]="['/cars', car.id]">Details</button></div>
+
+    </div></div>
+    <div class="details">
+    <h2>Dettagli della macchina</h2>
+    <p>ID: {{ carId }}</p>
+    <p>Marca: {{ car.brand }}</p>
+    <p>Modello: {{ car.model }}</p>
+    <p>Anno: {{ car.year }}</p>
+    <p>Prezzo: {{ car.price }}</p></div>
