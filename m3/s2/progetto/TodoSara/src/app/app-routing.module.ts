@@ -4,7 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CompletedComponent } from './components/completed/completed.component';
 import { UsersComponent } from './components/users/users.component';
 
-const routes: Routes = [{path:"/",component:HomeComponent},
+const routes: Routes = [{path:"",component:HomeComponent},
 {path:"/completed",component:CompletedComponent},
 {path:"/users",component:UsersComponent}];
 

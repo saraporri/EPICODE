@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { iUser } from '../models/user';
 @Injectable({
   providedIn: 'root'
 })
@@ -807,5 +807,10 @@ export class UserService {
       "title":"VP Sales"
     }
   ]
-
+  constructor() {}  getAll() {
+    return this.users
+  }
+  getById(id: number){
+    return this.users.find(u => u.id === id)
+  }
 }

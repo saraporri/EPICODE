@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-
+import { iTodo } from '../models/todo';
+import { iUser } from '../models/user';
+import { UserService } from './user.service';
 @Injectable({
   providedIn: 'root'
 })
@@ -907,5 +909,24 @@ export class TodoService {
       "userId":32
     }
   ]
+  constructor(private userSvc: UserService) {}
 
+  getTodos(): iTodo[] {
+    return this.todoList;
+  }
+
+  toggleTodoCompleted(id: number) {
+    const todo = this.todoList.find((t) => t.id === id);
+    if (todo) {
+      todo.completed = !todo.completed;
+    }
+  }
+  getUserByTodoId(todoId: number): iUser | undefined {
+    const todo = this.todoList.find((t) => t.id === todoId);
+    return this.userService.utenti.find((u) => u.id === todo?.userId);
+  }
+
+  getCompletedTodos(): iTodo[] {
+    return this.todoList.filter((todo) => todo.completed);
+  }
 }
