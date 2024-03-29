@@ -921,7 +921,10 @@ export class TodoService {
       todo.completed = !todo.completed;
     }
   }
-
+  getUserByTodoId(todoId: number): iUser | undefined {
+    const todo = this.todos.find((t) => t.id === todoId);
+    return this.userSvc.users.find((u) => u.id === todo?.userId);
+  }
 
   getCompletedTodos(): iTodo[] {
     return this.todos.filter((todo) => todo.completed);
