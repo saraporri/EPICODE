@@ -1,1 +1,20 @@
-<p>users works!</p>
+<div class="card mb-3" *ngFor="let user of users">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img [src]="user.user.image" class="img-fluid rounded-start" alt="user">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ user.user.firstName }} {{ user.user.lastName }}</h5>
+        <p class="card-text">{{ user.user.title }}</p>
+      </div>
+
+      <ul class="list-unstyled">
+        <li *ngFor="let todo of user.todos" class="col-12">
+          <app-todo [todo]="todo"></app-todo>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

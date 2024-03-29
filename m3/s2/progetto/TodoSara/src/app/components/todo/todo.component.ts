@@ -17,4 +17,5 @@ ngOnInit(): void {if(this.todo){
 }
 }
 toggle(id:number){this.todoSvc.toggleTodo(id)}
+
 }

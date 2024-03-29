@@ -807,7 +807,7 @@ export class UserService {
       "title":"VP Sales"
     }
   ]
-  constructor() {}  getAll() {
+  constructor() {}  getUsers() {
     return this.users
   }
   getById(id: number){
