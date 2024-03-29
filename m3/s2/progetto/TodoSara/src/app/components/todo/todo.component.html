@@ -1,0 +1,11 @@
+<form
+[ngClass]="{'alert':true, 'alert-success' : task.completed, 'alert-danger' : !task.completed}"
+role="alert">
+  <div class="d-flex gap-2 align-items-start">
+    <input type="checkbox" class="mt-2">
+    <div>
+      <label class="fs-5 fw-bold">{{task.todo}}</label>
+      <p class="mb-0">Assigned to:</p>
+    </div>
+  </div>
+</form>

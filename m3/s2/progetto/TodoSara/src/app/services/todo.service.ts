@@ -912,21 +912,18 @@ export class TodoService {
   constructor(private userSvc: UserService) {}
 
   getTodos(): iTodo[] {
-    return this.todoList;
+    return this.todos;
   }
 
-  toggleTodoCompleted(id: number) {
-    const todo = this.todoList.find((t) => t.id === id);
+  toggleTodo(id: number) {
+    const todo = this.todos.find((todo) => todo.id === id);
     if (todo) {
       todo.completed = !todo.completed;
     }
   }
-  getUserByTodoId(todoId: number): iUser | undefined {
-    const todo = this.todoList.find((t) => t.id === todoId);
-    return this.userService.utenti.find((u) => u.id === todo?.userId);
-  }
+
 
   getCompletedTodos(): iTodo[] {
-    return this.todoList.filter((todo) => todo.completed);
+    return this.todos.filter((todo) => todo.completed);
   }
 }

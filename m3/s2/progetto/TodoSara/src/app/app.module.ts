@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CompletedComponent } from './components/completed/completed.component';
 import { UsersComponent } from './components/users/users.component';
 import { FormsModule } from '@angular/forms';
+import { TodoComponent } from './components/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     HomeComponent,
     CompletedComponent,
-    UsersComponent
+    UsersComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
