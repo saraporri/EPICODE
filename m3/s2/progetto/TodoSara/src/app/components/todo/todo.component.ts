@@ -15,7 +15,8 @@ constructor (private todoSvc:TodoService){}
 ngOnInit(): void {if(this.todo){
   this.user = this.todoSvc.getUserByTodoId(this.todo.id);
 }
+} toggleTodo() {
+  this.todo.completed = !this.todo.completed;
 }
-toggle(id:number){this.todoSvc.toggleTodo(id)}
 
 }
