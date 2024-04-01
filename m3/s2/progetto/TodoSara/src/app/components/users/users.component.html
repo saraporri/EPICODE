@@ -9,7 +9,7 @@
         <p class="card-text">{{ user.user.title }}</p>
       </div>
 
-      <ul class="list-unstyled">
+      <ul class="list-unstyled me-5">
         <li *ngFor="let todo of user.todos" class="col-12">
           <app-todo [todo]="todo"></app-todo>
         </li>
