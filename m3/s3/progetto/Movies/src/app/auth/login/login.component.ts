@@ -9,7 +9,7 @@ import { iLoginData } from '../models/login-data';
 })
 export class LoginComponent {
 
-  loginData:Partial<iLoginData> = {}
+  login:iLoginData = {email:"",password:""}
 
   constructor(
     private authSvc:AuthService,
@@ -18,9 +18,9 @@ export class LoginComponent {
 
     signIn(){
 
-      this.authSvc.login(this.loginData)
+      this.authSvc.login(this.login)
       .subscribe(data => {
-        this.router.navigate(['/dashboard'])
+        this.router.navigate(['/'])
       })
 
     }

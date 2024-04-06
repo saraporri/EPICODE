@@ -1,20 +1,31 @@
 import { Injectable } from '@angular/core';
-import { iUsers } from './models/users';
 import { environment } from '../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
-import { iMovies } from './models/movies';
+import { iMovies } from './models/movies';import { BehaviorSubject} from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class GeneralService {
+export class MoviesService {
+
+
+
+  moviesUrl = environment.moviesUrl;
+
+
+  moviesArr: iMovies[]=[]
+
+
+  movieSubject = new BehaviorSubject<iMovies[]>([]);
+
+
+  $movie = this.movieSubject.asObservable()
+
+
+
 
   constructor(private http:HttpClient) { }
-
-usersApiUrl:string=environment.usersUrl
-
-  getAllUsers(){this.http.get<iUsers[]>(this.usersApiUrl)}
-  getUserById(id:number){ return this.http.get<iUsers>(this.usersApiUrl+"/"+id)}
 
 
   moviesApiUrl:string=environment.moviesUrl

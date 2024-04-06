@@ -1,5 +1,12 @@
 {
-  "users":[],
-  "movies-popular":[],
-  "favorites":[]
+  "users": [
+    {
+      "email": "sara@porri.com",
+      "password": "$2a$10$yNA3.q8v/LhwZDFBimWbM.ntDELfyGWfHVaWN314bD.LkCHs3g.C.",
+      "name": "sara",
+      "id": 1
+    }
+  ],
+  "movies-popular": [],
+  "favorites": []
 }

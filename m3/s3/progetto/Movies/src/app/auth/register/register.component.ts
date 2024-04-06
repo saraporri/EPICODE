@@ -1,5 +1,4 @@
 import { iUser } from './../models/user';
-import { iLoginData } from './../models/login-data';
 import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -22,7 +21,7 @@ export class RegisterComponent {
     this.authSvc.register(this.registerData)
     .subscribe(data => {
 
-      this.router.navigate(['dashboard'])
+      this.router.navigate(['../login'])
 
     })
 }

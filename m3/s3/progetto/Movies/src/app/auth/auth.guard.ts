@@ -1,6 +1,6 @@
 import { AuthService } from './auth.service';
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot,GuardResult, MaybeAsync, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot,GuardResult, MaybeAsync, RouterStateSnapshot,Router } from '@angular/router';
 import { map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
