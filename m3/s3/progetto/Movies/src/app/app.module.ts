@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './main-components/footer/footer.component';
-import { HeaderComponent } from './main-components/footer/header/header.component';
+import { HeaderComponent } from './main-components/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HeaderComponent } from './main-components/footer/header/header.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
