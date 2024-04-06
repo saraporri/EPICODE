@@ -1,4 +1,8 @@
+import { iUser } from './../models/user';
+import { iLoginData } from './../models/login-data';
+import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,4 +11,19 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  registerData:Partial<iUser> = {}
+
+  constructor(
+    private authSvc:AuthService,
+    private router:Router
+    ){}
+
+  signUp(){
+    this.authSvc.register(this.registerData)
+    .subscribe(data => {
+
+      this.router.navigate(['dashboard'])
+
+    })
+}
 }

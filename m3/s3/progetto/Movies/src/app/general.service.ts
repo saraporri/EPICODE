@@ -14,13 +14,13 @@ export class GeneralService {
 usersApiUrl:string=environment.usersUrl
 
   getAllUsers(){this.http.get<iUsers[]>(this.usersApiUrl)}
-  getUserById(id:number){this.http.get<iUsers>(this.usersApiUrl+"/"+id)}
+  getUserById(id:number){ return this.http.get<iUsers>(this.usersApiUrl+"/"+id)}
 
 
   moviesApiUrl:string=environment.moviesUrl
 
   getAllMovies(){this.http.get<iMovies[]>(this.moviesApiUrl)}
-  getMoviesById(id:number){this.http.get<iMovies>(this.moviesApiUrl+"/"+id)}
+  getMoviesById(id:number){return this.http.get<iMovies>(this.moviesApiUrl+"/"+id)}
 
 
 
