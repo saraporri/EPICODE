@@ -5,6 +5,18 @@
       "password": "$2a$10$yNA3.q8v/LhwZDFBimWbM.ntDELfyGWfHVaWN314bD.LkCHs3g.C.",
       "name": "sara",
       "id": 1
+    },
+    {
+      "email": "sara@porri.it",
+      "password": "$2a$10$I12qxNS/Di1f5FrIYPd0Yehbfq7svA/JqT90D4TbClEaotqwFUicm",
+      "name": "sara",
+      "id": 2
+    },
+    {
+      "email": "rosa@ciao.it",
+      "password": "$2a$10$mnwbvAcK1gaigwxxT0ml9.x9XOgu22wr7rD6/wl.sU6MEC4HASrPy",
+      "name": "rosa",
+      "id": 3
     }
   ],
   "movies-popular": [],

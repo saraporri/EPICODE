@@ -10,19 +10,11 @@ import { iLoginData } from '../models/login-data';
 export class LoginComponent {
 
   login:iLoginData = {email:"",password:""}
-
+errorMessage:string=""
   constructor(
     private authSvc:AuthService,
     private router:Router
     ){}
-
-    signIn(){
-
+    signIn() {
       this.authSvc.login(this.login)
-      .subscribe(data => {
-        this.router.navigate(['/'])
-      })
-
-    }
-
-}
+        .subscribe(data=>{this.router.navigate(["/"])})}}

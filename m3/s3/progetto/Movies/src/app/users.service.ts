@@ -25,11 +25,10 @@ export class UsersService {
 
 
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {this.getAllUsers().subscribe(data => {
+    this.userSubject.next(data)
+    this.userArr = data
+  }) }
 
-usersApiUrl:string=environment.usersUrl
-
-  getAllUsers(){this.http.get<iUsers[]>(this.usersApiUrl)}
-  getUserById(id:number){ return this.http.get<iUsers>(this.usersApiUrl+"/"+id)}
-
+getAllUsers(){return this.http.get<iUsers[]>(this.userUrl)}
 }

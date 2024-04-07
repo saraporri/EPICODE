@@ -1,7 +1,9 @@
 <h1>Accedi</h1>
 
 <form>
-
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+    {{ errorMessage }} Riprova o <a routerLink="/auth/register" class="text-black">crea un nuovo account.</a>
+  </div>
   <input type="email" name="email"
   [(ngModel)]="login.email"
   class="form-control" placeholder="email">
