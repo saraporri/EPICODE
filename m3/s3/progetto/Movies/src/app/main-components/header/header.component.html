@@ -1,13 +1,12 @@
 <header class="p-3 mb-3 border-bottom">
   <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
     </a>
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
       <li><a routerLink="/" class="nav-link px-2 link-body-emphasis">Home</a></li>
-      <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Profilo</a></li>
-      <li><a routerLink="/film-list" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">film</a></li>
-      <li><a routerLink="/user-registered" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Utenti Registrati</a></li>
+      <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Profile</a></li>
+      <li><a routerLink="/movies-list" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Movies</a></li>
+      <li><a routerLink="/user-registered" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Users</a></li>
     </ul>
     <div class="dropdown text-end">
       <a
@@ -18,9 +17,9 @@
         <img src="https://cdn-icons-png.freepik.com/256/3468/3468377.png" alt="mdo" width="40" height="40" class="rounded-circle">
       </a>
       <ul #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-        <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/login">login</a></li>
-        <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/register">register</a></li>
-        <button (click)="logout()" *ngIf="isUserLoggedIn" class="btn btn-danger">Esci</button>
+        <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
+        <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/register">Register</a></li>
+        <button (click)="logout()" *ngIf="isUserLoggedIn" class="btn btn-danger">Log Out</button>
       </ul>
 
     </div>

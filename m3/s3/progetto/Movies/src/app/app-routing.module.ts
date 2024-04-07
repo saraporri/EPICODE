@@ -11,7 +11,10 @@ const routes: Routes = [
 { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
 
 
-{ path: '', loadChildren: () => import('./components/homepage/homepage.module').then(m => m.HomepageModule) }];
+{ path: '', loadChildren: () => import('./components/homepage/homepage.module').then(m => m.HomepageModule) },
+
+
+{ path: 'movies-list', loadChildren: () => import('./components/movies-list/movies-list.module').then(m => m.MoviesListModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
