@@ -1,5 +1,7 @@
-export interface iUser {id:number,
-  name:string,
-  email:string
+export interface iUsers {id:number
   password?:string
+  firstName:string
+  lastName:string
+  email:string
+  image:string
 }

@@ -12,14 +12,13 @@ const routes: Routes = [
 },
 
 
-{ path: '', loadChildren: () => import('./components/homepage/homepage.module').then(m => m.HomepageModule)  ,   canActivate:[GuestGuard]
+{ path: '', loadChildren: () => import('./components/homepage/homepage.module').then(m => m.HomepageModule) ,canActivate:[GuestGuard]
 },
 
+{ path: 'users', loadChildren: () => import('./components/users/users.module').then(m=>m.UsersModule),canActivate:[AuthGuard] },
 
 { path: 'movies-list', loadChildren: () => import('./components/movies-list/movies-list.module').then(m => m.MoviesListModule),canActivate:[AuthGuard] },
-
-
-{ path: 'users', loadChildren: () => import('./components/users/users.module').then(m => m.UsersModule) }];
+{ path: 'profile', loadChildren: () => import('./components/profile/profile.module').then(m=>m.ProfileModule),canActivate:[AuthGuard] }]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

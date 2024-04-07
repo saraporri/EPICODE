@@ -1,4 +1,4 @@
-import { iUser } from './models/user';
+import { iUsers } from './models/user';
 import { iLoginData } from './models/login-data';
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 
 type AccessData = {
   accessToken:string,
-  user:iUser
+  user:iUsers
 }
 
 @Injectable({
@@ -19,7 +19,7 @@ export class AuthService {
 
   jwtHelper:JwtHelperService = new JwtHelperService()
 
-  authSubject = new BehaviorSubject<iUser|null>(null);
+  authSubject = new BehaviorSubject<iUsers|null>(null);
 
   user$ = this.authSubject.asObservable()
   isLoggedIn$ = this.user$.pipe(
@@ -42,7 +42,7 @@ export class AuthService {
   registerUrl:string = environment.registerUrl
   loginUrl:string = environment.loginUrl
 
-  register(newUser:Partial<iUser>):Observable<AccessData>{
+  register(newUser:Partial<iUsers>):Observable<AccessData>{
     return this.http.post<AccessData>(this.registerUrl,newUser)
   }
 

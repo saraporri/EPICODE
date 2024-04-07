@@ -53,6 +53,12 @@
       "password": "$2a$10$mHxnAQF.CuY3cGlUvIb6OuvXrQYUIEMBAU1dRIdVSKJlp7E1/y5eS",
       "firstName": "pane",
       "id": 9
+    },
+    {
+      "email": "nadia@abbona.com",
+      "password": "$2a$10$SVWK1Iknqz8LM2CMMunbcepXJxBLSlpcGVrFy7z.sCI1HA5MJxKzS",
+      "firstName": "nadia",
+      "id": 10
     }
   ],
   "movies-popular": [
