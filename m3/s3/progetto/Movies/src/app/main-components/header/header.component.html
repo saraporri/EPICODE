@@ -3,21 +3,21 @@
     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
     </a>
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-      <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Profile</a></li>
-      <li><a routerLink="/movies-list" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Movies</a></li>
-      <li><a routerLink="/users" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Users</a></li>
+      <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis text-white"*ngIf="isUserLoggedIn">Profile</a></li>
+      <li><a routerLink="/movies-list" class="nav-link px-2 link-body-emphasis text-white"*ngIf="isUserLoggedIn">Movies</a></li>
+      <li><a routerLink="/users" class="nav-link px-2 link-body-emphasis text-white"*ngIf="isUserLoggedIn">Users</a></li>
     </ul>
     <div class="dropdown text-end">
       <a
-      class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+      class="d-block link-body-emphasis text-white dropdown-toggle"
       (click)="collapse.toggle()"
       [attr.aria-expanded]="!isCollapsed"
       aria-controls="collapseExample">
         <img src="https://cdn-icons-png.freepik.com/256/3468/3468377.png" alt="mdo" width="40" height="40" class="rounded-circle">
       </a>
       <ul #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-        <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/login">Login</a></li>
-        <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/register">Register</a></li>
+        <li class="list-group-item"><a class="dropdown-item text-white" routerLink="/auth/login">Login</a></li>
+        <li class="list-group-item"><a class="dropdown-item text-white" routerLink="/auth/register">Register</a></li>
         <button (click)="logout()" *ngIf="isUserLoggedIn" class="btn btn-danger">Log Out</button>
       </ul>
 

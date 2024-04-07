@@ -47,6 +47,12 @@
       "password": "$2a$10$izssenryfYxd/I8bJY0EpuJ8YuX/T5I7g6ggyBPXrZ/j35GtohuuG",
       "name": "simo",
       "id": 8
+    },
+    {
+      "email": "pan@goccio.it",
+      "password": "$2a$10$mHxnAQF.CuY3cGlUvIb6OuvXrQYUIEMBAU1dRIdVSKJlp7E1/y5eS",
+      "firstName": "pane",
+      "id": 9
     }
   ],
   "movies-popular": [

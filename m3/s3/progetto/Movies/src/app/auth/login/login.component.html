@@ -1,4 +1,4 @@
-<h1>Accedi</h1>
+<h1 class="text-white">Accedi</h1>
 
 <form>
   <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
@@ -11,6 +11,6 @@
   [(ngModel)]="login.password"
   class="form-control" placeholder="password">
 
-  <button (click)="signIn()" class="btn btn-success">Accedi</button>
+  <button (click)="signIn()" class="btn px-5 py-3 text-white">Accedi</button>
 
 </form>

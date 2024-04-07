@@ -1,7 +1,7 @@
-import { iUser } from './../models/user';
 import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { iUsers } from '../../models/users';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
 
-  registerData:Partial<iUser> = {}
+  registerData:Partial<iUsers> = {}
 
   constructor(
     private authSvc:AuthService,

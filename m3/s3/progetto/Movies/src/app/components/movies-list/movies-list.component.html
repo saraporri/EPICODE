@@ -1,10 +1,10 @@
 <div class="row row-cols-3 g-4">
   <div class="col" *ngFor="let movie of movies" >
-    <div class="card m-4" >
+    <div class="card m-4 sfondo text-white border" >
       <img [src]="movie.image" class="card-img-top" >
       <div class="card-body">
         <h5 class="card-title">{{movie.title}}</h5>
-        <p>{{movie.genre}}</p>
+        <p class="fst-italic">{{movie.genre}}</p>
         <p class="card-text d-flex align-items-end">{{movie.plot}}</p>
       </div>
     </div>
