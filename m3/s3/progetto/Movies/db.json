@@ -59,6 +59,12 @@
       "password": "$2a$10$SVWK1Iknqz8LM2CMMunbcepXJxBLSlpcGVrFy7z.sCI1HA5MJxKzS",
       "firstName": "nadia",
       "id": 10
+    },
+    {
+      "email": "ludo@dorce.it",
+      "password": "$2a$10$6zW1p1k5wrHSAzzxdkrycO5pX1QkKijOdYqLoXprdj5I3pZjxIBj.",
+      "firstName": "ludo",
+      "id": 11
     }
   ],
   "movies-popular": [
