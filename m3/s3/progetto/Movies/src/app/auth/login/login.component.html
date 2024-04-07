@@ -1,16 +1,18 @@
-<h1 class="text-white">Accedi</h1>
+
+
+<h1 class="text-white my-5">Accedi</h1>
 
 <form>
   <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
   </div>
   <input type="email" name="email"
   [(ngModel)]="login.email"
-  class="form-control" placeholder="email">
+  class="form-control my-1" placeholder="email">
 
   <input type="password" name="password"
   [(ngModel)]="login.password"
-  class="form-control" placeholder="password">
+  class="form-control my-1" placeholder="password">
 
-  <button (click)="signIn()" class="btn px-5 py-3 text-white">Accedi</button>
+  <button (click)="signIn()" class="btn px-5 py-3 text-white my-5">Accedi</button>
 
 </form>

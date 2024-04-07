@@ -65,6 +65,12 @@
       "password": "$2a$10$6zW1p1k5wrHSAzzxdkrycO5pX1QkKijOdYqLoXprdj5I3pZjxIBj.",
       "firstName": "ludo",
       "id": 11
+    },
+    {
+      "email": "dorce@dorcina.com",
+      "password": "$2a$10$lDW18p4ylCcbB4XBojdRWu70lpZJblq.w2vMNLJ/sVOlW1UNNgywW",
+      "firstName": "dorcetto",
+      "id": 12
     }
   ],
   "movies-popular": [

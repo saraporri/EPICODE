@@ -1,19 +1,19 @@
-<h1 class="text-white">Registrati</h1>
+<h1 class="text-white my-5">Registrati</h1>
 
 <form>
 
   <input type="text" name="nome"
   [(ngModel)]="registerData.firstName"
-  class="form-control" placeholder="nome">
+  class="form-control my-1" placeholder="nome">
 
   <input type="email" name="email"
   [(ngModel)]="registerData.email"
-  class="form-control" placeholder="email">
+  class="form-control my-1" placeholder="email">
 
   <input type="password" name="password"
   [(ngModel)]="registerData.password"
-  class="form-control" placeholder="password">
+  class="form-control my-1" placeholder="password">
 
-  <button (click)="signUp()" class="btn btn-success">Registrati</button>
+  <button (click)="signUp()" class="btn text-white px-5 py-3 my-5">Registrati</button>
 
 </form>
