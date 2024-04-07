@@ -1,11 +1,11 @@
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col" *ngFor="let movie of movies">
-    <div class="card">
+<div class="row row-cols-3 g-4">
+  <div class="col" *ngFor="let movie of movies" >
+    <div class="card m-4" >
       <img [src]="movie.image" class="card-img-top" >
       <div class="card-body">
         <h5 class="card-title">{{movie.title}}</h5>
         <p>{{movie.genre}}</p>
-        <p class="card-text">{{movie.plot}}</p>
+        <p class="card-text d-flex align-items-end">{{movie.plot}}</p>
       </div>
     </div>
   </div>

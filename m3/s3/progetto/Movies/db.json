@@ -29,136 +29,210 @@
       "password": "$2a$10$fCseM8M8AMsE7UKW6cjQkuKNaRa2OGYBxU9.8sk6lJ9CH.DB8BJa6",
       "name": "dario",
       "id": 5
+    },
+    {
+      "email": "mario@var.it",
+      "password": "$2a$10$z33Ct3fVK7279OWEIEpjDeF7lsP.36gfSWuFfZiZqF5MQ6dxQ2Jcu",
+      "name": "mario",
+      "id": 6
+    },
+    {
+      "email": "franz@naz.it",
+      "password": "$2a$10$eSOv.MaHAqyavKi5gkAuWeaPjHr0Z/UN7bcI4CWDhE/p7/wcghMhe",
+      "name": "francia",
+      "id": 7
+    },
+    {
+      "email": "simo@simotentordici.it",
+      "password": "$2a$10$izssenryfYxd/I8bJY0EpuJ8YuX/T5I7g6ggyBPXrZ/j35GtohuuG",
+      "name": "simo",
+      "id": 8
     }
   ],
   "movies-popular": [
     {
-        "id": 1,
-        "title": "Inception",
-        "year": 2010,
-        "genre": ["Action", "Adventure", "Sci-Fi"],
-        "plot": "A thief who enters people's dreams to steal their secrets must plant an idea into someone's mind.",
-        "image": "https://picsum.photos/200/300"
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "plot": "A thief who enters people's dreams to steal their secrets must plant an idea into someone's mind.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 2,
-        "title": "The Shawshank Redemption",
-        "year": 1994,
-        "genre": ["Drama"],
-        "plot": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.",
-        "image": "https://picsum.photos/200/300"
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "genre": [
+        "Drama"
+      ],
+      "plot": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 3,
-        "title": "The Godfather",
-        "year": 1972,
-        "genre": ["Crime", "Drama"],
-        "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-        "image": "https://picsum.photos/200/300"
+      "id": 3,
+      "title": "The Godfather",
+      "year": 1972,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 4,
-        "title": "Pulp Fiction",
-        "year": 1994,
-        "genre": ["Crime", "Drama"],
-        "plot": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-        "image": "https://picsum.photos/200/300"
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "plot": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 5,
-        "title": "The Dark Knight",
-        "year": 2008,
-        "genre": ["Action", "Crime", "Drama"],
-        "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-        "image": "https://picsum.photos/200/300"
+      "id": 5,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 6,
-        "title": "Forrest Gump",
-        "year": 1994,
-        "genre": ["Drama", "Romance"],
-        "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
-        "image": "https://picsum.photos/200/300"
+      "id": 6,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 7,
-        "title": "Interstellar",
-        "year": 2014,
-        "genre": ["Adventure", "Drama", "Sci-Fi"],
-        "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-        "image": "https://picsum.photos/200/300"
+      "id": 7,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 8,
-        "title": "The Matrix",
-        "year": 1999,
-        "genre": ["Action", "Sci-Fi"],
-        "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-        "image": "https://picsum.photos/200/300"
+      "id": 8,
+      "title": "The Matrix",
+      "year": 1999,
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 9,
-        "title": "The Lord of the Rings: The Return of the King",
-        "year": 2003,
-        "genre": ["Action", "Adventure", "Drama"],
-        "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-        "image": "https://picsum.photos/200/300"
+      "id": 9,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 10,
-        "title": "Schindler's List",
-        "year": 1993,
-        "genre": ["Biography", "Drama", "History"],
-        "plot": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-        "image": "https://picsum.photos/200/300"
+      "id": 10,
+      "title": "Schindler's List",
+      "year": 1993,
+      "genre": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "plot": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 11,
-        "title": "Fight Club",
-        "year": 1999,
-        "genre": ["Drama"],
-        "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
-        "image": "https://picsum.photos/200/300"
+      "id": 11,
+      "title": "Fight Club",
+      "year": 1999,
+      "genre": [
+        "Drama"
+      ],
+      "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 12,
-        "title": "The Silence of the Lambs",
-        "year": 1991,
-        "genre": ["Crime", "Drama", "Thriller"],
-        "plot": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
-        "image": "https://picsum.photos/200/300"
+      "id": 12,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "plot": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 13,
-        "title": "The Green Mile",
-        "year": 1999,
-        "genre": ["Crime", "Drama", "Fantasy"],
-        "plot": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
-        "image": "https://picsum.photos/200/300"
+      "id": 13,
+      "title": "The Green Mile",
+      "year": 1999,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Fantasy"
+      ],
+      "plot": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 14,
-        "title": "The Departed",
-        "year": 2006,
-        "genre": ["Crime", "Drama", "Thriller"],
-        "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-        "image": "https://picsum.photos/200/300"
+      "id": 14,
+      "title": "The Departed",
+      "year": 2006,
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 15,
-        "title": "Saving Private Ryan",
-        "year": 1998,
-        "genre": ["Drama", "War"],
-        "plot": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
-        "image": "https://picsum.photos/200/300"
+      "id": 15,
+      "title": "Saving Private Ryan",
+      "year": 1998,
+      "genre": [
+        "Drama",
+        "War"
+      ],
+      "plot": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+      "image": "https://picsum.photos/200/300"
     },
     {
-        "id": 16,
-        "title": "Gladiator",
-        "year": 2000,
-        "genre": ["Action", "Adventure", "Drama"],
-        "plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-        "image": "https://picsum.photos/200/300"
-    }],
+      "id": 16,
+      "title": "Gladiator",
+      "year": 2000,
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "image": "https://picsum.photos/200/300"
+    }
+  ],
   "favorites": []
 }

@@ -17,4 +17,4 @@ errorMessage:string=""
     ){}
     signIn() {
       this.authSvc.login(this.login)
-        .subscribe(data=>{this.router.navigate(["/"])})}}
+        .subscribe(data=>{this.router.navigate(["/movies-list"])})}}

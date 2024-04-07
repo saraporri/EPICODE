@@ -3,10 +3,9 @@
     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
     </a>
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-      <li><a routerLink="/" class="nav-link px-2 link-body-emphasis">Home</a></li>
       <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Profile</a></li>
       <li><a routerLink="/movies-list" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Movies</a></li>
-      <li><a routerLink="/user-registered" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Users</a></li>
+      <li><a routerLink="/users" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Users</a></li>
     </ul>
     <div class="dropdown text-end">
       <a
